@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Online Fashion Store</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="website-icon.png" alt="Website Icon">
+            <h1>Online Fashion Store</h1>
+        </div>
+        <div class="cart">
+            <button id="cartButton" onclick="toggleCart()">Cart</button>
+            <div id="cartItems" class="hide"></div>
+            <div id="cartTotal" class="hide">Total: $0.00</div>
+            <button id="checkoutButton" onclick="checkout()">Checkout</button>
+        </div>
+    </header>
+    <main>
+        <div class="search">
+            <input type="text" id="searchInput" placeholder="Search products">
+            <button onclick="search()">Search</button>
+        </div>
+        <div class="products">
+            <div class="product">
+                <img src="product1.jpg" alt="Product 1">
+                <h3>Product 1</h3>
+                <p>$19.99</p>
+                <button onclick="addToCart(19.99)">Add to Cart</button>
+            </div>
+            <!-- Add more product elements here -->
+        </div>
+    </main>
+    <footer>
+        <button onclick="contactUs()">Contact Us</button>
+    </footer>
+</body>
+</html>
